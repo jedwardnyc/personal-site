@@ -5,7 +5,8 @@
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start:dev": "vue-cli-service serve"
+    "start:dev": "vue-cli-service serve",
+    "deploy": "aws s3 sync ./dist s3://www.jacobrico.com"
   },
   "dependencies": {
     "vue": "^2.5.17",
