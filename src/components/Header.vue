@@ -30,9 +30,11 @@
   .nav {
     display: grid;
     grid-template-columns: 1fr 9fr;
-    background-color: lightgrey;
+    background-color: #ADACB5;
+    color: #e9e9e9;
     align-items: center;
     padding: 0 2em;
+    font-weight: 600;
   }
   .links {
     display: grid;
@@ -47,7 +49,6 @@
   }
   .nav-link {
     align-self: center;
-    color: black;
     text-decoration: none;
   }
   .nav-link:hover {

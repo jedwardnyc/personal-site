@@ -14,20 +14,23 @@ Vue.use(Vuetify, {
 
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
+import Blog from './pages/Blog.vue';
 import Projects from './pages/Projects.vue';
-import Contact from './pages/Contact.vue';
+
 
 Vue.component('portfolio-header', () => import('./components/Header.vue'));
+Vue.component('project', () => import('./components/Project.vue'));
 
 const routes = [
   { path: '/', component: Home, name: 'Home' },
   { path: '/about', component: About, name: 'ABOUT' },
-  { path: '/projects', component: Projects, name: 'PROJECTS' },
-  { path: '/contact', component: Contact, name: 'CONTACT'}
+  { path: '/blog', component: Blog, name: 'BLOG'},
+  { path: '/projects', component: Projects, name: 'PROJECTS' }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 new Vue({

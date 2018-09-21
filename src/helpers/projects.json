@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": 1,
+    "name": "Marvelpedia",
+    "imgs": [],
+    "github": "https://github.com/jedwardnyc/marvelpedia",
+    "live": ""
+  },
+  {
+    "id": 2,
+    "name": "MHI Academy",
+    "imgs": [],
+    "github": "https://github.com/jedwardnyc/marvelpedia",
+    "live": "http://senior-enrich-project.herokuapp.com/#/"
+  }
+]
