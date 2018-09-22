@@ -1,17 +1,51 @@
-
 [
   {
-    "id": 1,
     "name": "Marvelpedia",
-    "imgs": [],
+    "imgs": [
+      "https://s3.amazonaws.com/www.jacobrico.com/img/Marvel-title.png",
+      "https://s3.amazonaws.com/www.jacobrico.com/img/Marvel-1.png",
+      "https://s3.amazonaws.com/www.jacobrico.com/img/Marvel-3.png"
+    ],
     "github": "https://github.com/jedwardnyc/marvelpedia",
-    "live": ""
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=miZ6bzvAEjs",
+   "description": "<v-content class='description-text'><span class='description-title'><strong>Technology Used:</strong> ​React, Express.js, Node.js, Google Cloud Vision API</span><br/><br/>I utilized Marvel's API to make calls to their extensive comic database and filtered that info encyclopedia style. I used Google's Cloud Vision API to identify characters in photos that can are encoded to base64 and sent directly to Google without the need for storing photos in a database.</v-content>"
   },
   {
-    "id": 2,
-    "name": "MHI Academy",
+    "name": "UnTapped Trivia",
     "imgs": [],
-    "github": "https://github.com/jedwardnyc/marvelpedia",
-    "live": "http://senior-enrich-project.herokuapp.com/#/"
+    "github": "https://github.com/jedwardnyc/untapped-trivia-native",
+    "live": "https://untapped-trivia.herokuapp.com/",
+    "video": "",
+    "description": "<v-content class='description-text'><span class='description-title'><strong>Technology Used:</strong> React, React Native, Express.js, Node.js, PostgreSQL, Socket.io</span><br /><br />I created the React Native portion of a bar trivia app that connects via websockets to our React “admin” app. I utilized Passport.js and vanilla JS to create OAuth 2.0 authentication with Facebook and Google on both mobile and the React app. I also, added and edited permissions in Xcode/Obj-C in order to gain Geolocation and Camera access for iPhone users.</v-content>"
+  },
+  {
+    "name": "Mars Mining Drone",
+    "imgs": [],
+    "github": "https://github.com/jedwardnyc/mars-drone",
+    "live": "",
+    "video": "",
+    "description": "<v-content class='description-text'><span class='description-title'><strong>Technology Used: </strong>Node.js</span><br /><br />Built for Headlight Lab's Mars Mining Drone Challenge in 2018. I created a Node.js based algorithm within the course of 4 hours from assignment to submission that would power a drone to automatically find and mine materials remotely on Mars.</v-content>"
+  },
+  {
+    "name": "MHI Academy",
+    "imgs": [
+      "https://s3.amazonaws.com/www.jacobrico.com/img/MHI-1.png",
+      "https://s3.amazonaws.com/www.jacobrico.com/img/MHI-2.png",
+      "https://s3.amazonaws.com/www.jacobrico.com/img/MHI-3.png",
+      "https://s3.amazonaws.com/www.jacobrico.com/img/MHI-4.png"
+    ],
+    "github": "https://github.com/jedwardnyc/MHI-academy",
+    "live": "http://senior-enrich-project.herokuapp.com/",
+    "video": "",
+    "description": "<v-content class='description-text'><span class='description-title'><strong>Technology Used:</strong> Node.js, Express.js, React/Redux, PostgreSQL</span><br /><br />A faux school directory built for our first project at Fullstack Academy with fully editable students and campuses.</v-content>"
+  },
+  {
+    "name": "The Light Web",
+    "imgs": [],
+    "github": "https://github.com/jedwardnyc/the-light-web",
+    "live": "https://the-light-web.herokuapp.com/",
+    "video": "",
+    "description": "<v-content class='description-text'><span class='description-title'><strong>Technology Used:</strong> React/Redux, Express,js, Node.js, PostgreSQL, Passport.js, Stripe API</span><br /><br />Created authentication strategies using Passport.js for Google OAuth and JWTs for local authentication.Used Nodemailer to send automated email confirmations on account creation password retrieval, and order creation.</v-content>"
   }
 ]

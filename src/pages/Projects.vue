@@ -1,8 +1,8 @@
 <template>
-  <v-container id="Projects">
-    <h1>PROJECTS</h1>
+  <v-container id="projects">
     <div 
-      :key="project.id"
+      class="projects-container"
+      :key="project.name"
       v-for="project in projects"
     >
       <project :project=project />
@@ -19,3 +19,13 @@
     })
   }
 </script>
+
+<style>
+  #projects {
+    display: grid;
+  }
+  .projects-title {
+    grid-column: 1 / -1;
+    margin-bottom: 1em;
+  }
+</style>
