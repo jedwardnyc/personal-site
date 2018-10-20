@@ -1,5 +1,5 @@
 <template>
-  <v-container class='about'>
+  <v-container fluid class='about'>
     <img class='headshot' src='../assets/headshot.jpg'/>
     <v-content class='about-text'>
       I am a perfect blend of  artist and engineer. 
@@ -16,23 +16,47 @@
 
 <style scoped>
   .about {
-    margin: 80px auto;
+    margin: 40px auto;
     width: 80%;
     font-size: 18px;
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-auto-flow: column;
     text-shadow: none;
+    grid-gap: 20px;
   }
   .headshot {
-    grid-column: 1;
+    grid-row: 1;
     width: 150px;
     height: 220px;
     border-radius: 10px;
+    justify-self: center;
   }
   .about-text {
-    grid-column: 2;
-    text-align: left;
-    margin-left: 30px;
-    align-self: center;
+    grid-row: 2;
+    text-align: center;
+    justify-self: center;
+  }
+
+  @media (min-width: 720px){
+    .about {
+      margin-top: 80px;
+      grid-auto-flow: row;
+      grid-template-columns: 2fr 10fr;
+      grid-template-rows: 1fr;
+    }
+    .headshot {
+      width: 200px;
+      height: 300px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .about-text {
+      grid-column: 2;
+      grid-row: 1;
+      margin-top: 40px;
+      margin-left: 20px;
+      text-align: left;
+      align-self: start;
+    }
   }
 </style>
